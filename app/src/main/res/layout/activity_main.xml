@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+      >
+
+        <com.perasia.slidepic.AutoScrollViewPager
+            android:id="@+id/viewpager_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.perasia.slidepic.view.CircleIndicator
+            android:id="@+id/indicator_default"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"/>
+    </FrameLayout>
+
+
+
+
+
+
+    <Button
+        android:layout_centerInParent="true"
+        android:onClick="Jump"
+        android:id="@+id/cancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>
